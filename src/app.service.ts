@@ -1,8 +1,9 @@
 import { Injectable } from '@nestjs/common';
+import { currencies } from './demo-data/currencies';
 
 @Injectable()
 export class AppService {
-  getHello(): string {
-    return 'Hello World!';
+  getAllCurrencies(): any {
+    return currencies;
   }
 }
