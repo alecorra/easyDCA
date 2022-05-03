@@ -19,6 +19,9 @@
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
     "test:e2e": "jest --config ./test/jest-e2e.json",
+    "__comment / database commands starts here": "",
+    "typeorm": "ts-node -r tsconfig-paths/register ./node_modules/typeorm/cli.js",
+    "orm:cli": "ts-node ./node_modules/typeorm/cli.js",
     "__comment / to generate migration from entities": "yarn run typeorm migration:generate -n <Migration Name>",
     "migration:create": "typeorm migration:create -n",
     "migration:run": "yarn run orm:cli migration:run"
