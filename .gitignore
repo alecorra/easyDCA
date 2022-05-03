@@ -37,5 +37,8 @@ lerna-debug.log*
 # DOCKER
 docker-compose.yml
 
+# DATABASE
+ormconfig.json
+
 # ENV vars
 .env

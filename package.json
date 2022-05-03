@@ -1,6 +1,6 @@
 {
-  "name": "easyDCA",
-  "version": "0.0.1",
+  "name": "easy-dca",
+  "version": "1.0.0",
   "description": "",
   "author": "",
   "private": true,
@@ -18,7 +18,10 @@
     "test:watch": "jest --watch",
     "test:cov": "jest --coverage",
     "test:debug": "node --inspect-brk -r tsconfig-paths/register -r ts-node/register node_modules/.bin/jest --runInBand",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "__comment / to generate migration from entities": "yarn run typeorm migration:generate -n <Migration Name>",
+    "migration:create": "typeorm migration:create -n",
+    "migration:run": "yarn run orm:cli migration:run"
   },
   "dependencies": {
     "@nestjs/common": "^8.0.0",

@@ -17,7 +17,10 @@ import { AppService } from './app.service';
         username: configService.get('DB_USERNAME'),
         password: configService.get('DB_PASSWORD'),
         database: configService.get('DB_NAME'),
-        entities: [__dirname + '/**/*.entity{.ts}'],
+        entities: ['src/database/entities/**/*.ts'],
+        migrations: ['src/database/migrations/**/*.ts'],
+        seeds: ['src/database/seeds/**/*.seed.ts'],
+        factories: ['src/database/seeds/factories/**/*.ts'],
         synchronize: false,
       })
     })
